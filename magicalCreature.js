@@ -1,20 +1,24 @@
 // Welcome to the magical zoo! Your task is to create and manage a list of magical creatures. Let's have some fun!
 
 // 1. Declare a variable named 'creatureName' and assign it a magical creature's name as a string.
+let creatureName = "dragon";
 
 
 
 // 2. Declare a variable named 'creatureDescription' and describe its magical properties as a string.
+let creatureDescription = "breathes fire";
 
 
 // 3. Do you believe that this creature is friendly to humans? 
 // Declare a variable named 'isFriendly' and assign it a boolean value.
+let isFriendly = false;
 
 
 
 // 4. The magical zoo has an age restriction! Declare a variable named 'visitorAge' and assign it a random age between 1 and 60.
 // Hint: Use Math.floor() to round a number up.
 // Hint: Use Math.random() for generating random numbers.
+let visitorAge = Math.floor(Math.random() * 60) + 1
 
 
 
@@ -22,14 +26,15 @@
 // Declare a variable named 'canVisit' and assign it an expression to see 
 // if the visitorAge variable is greater than 15.
 // Hint: use this resource if you need support: https://www.w3schools.com/js/js_booleans.asp 
-
-
+let canVisit = visitorAge > 15;
 
 // 6. Combine all the information into a summary.
 // Declare a variable named 'zooSummary' and combine all the above information using concatenation.
+let zooSummary = "name: " + creatureName + "description: " + creatureDescription + "isFriendly: " + isFriendly + "age " + visitorAge + "canvisit: " + canVisit;
 
 
 // 7. Print the summary using console.log()
+console.log(zooSummary);
 
 
 
